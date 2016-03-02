@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+   		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,800,700,300,600' rel='stylesheet' type='text/css'>
+        <title>Portfolio</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+    <body bgcolor = "#FFDA7C" >
+	    <nav class="top-nav">
+		    <ul>
+		    	<li>
+		    		<a href="splash.html">Home
+		    		</a>
+	    		</li>
+		    	<li>
+		    		<a href="projects.html">Projects
+		    		</a>
+	    		</li>
+		    	<li>
+		    		<a href="gallery.html">Gallery
+		    		</a>
+	    		</li>
+	    		<li>
+		    		<a href="interest.html">Interest
+		    		</a>
+	    		</li>
+	    		<li>
+		    		<a href="about_me.html">About Me
+		    		</a>
+	    		</li>
+    		</ul>
+	    </nav>
+	    <div class="row">
+		     <div class="main">
+		    	<p>	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam lobortis nec ante a commodo. Maecenas egestas a mauris in consectetur. Maecenas eu ante nec massa elementum laoreet. Fusce id magna ultrices, sollicitudin quam sed, condimentum lorem. Fusce ac mattis nibh. Mauris posuere placerat ligula nec interdum. Ut consequat commodo velit, sit amet pretium velit pulvinar in.</p>
+
+				<p>	Nullam eu scelerisque libero. Ut auctor metus quis mauris consequat, eget porta erat sagittis. Aliquam tincidunt lobortis ante non mattis. Vestibulum eget fermentum est, vitae convallis ligula. Proin posuere mauris lectus, non imperdiet odio tincidunt eu. Cras ut sodales elit, quis placerat mauris. Maecenas ut convallis quam, ac accumsan elit. In bibendum sit amet velit nec dapibus. Cras nec justo ac mi viverra facilisis. Duis sapien ex, aliquam eget sapien ac, aliquet malesuada eros. Nunc tincidunt dui in metus imperdiet interdum. Curabitur non erat diam.</p>
+
+				<p>	Etiam vel felis in libero pharetra tempus. Pellentesque eu maximus dui. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent hendrerit consectetur bibendum. Proin id pharetra quam. Donec ut felis finibus, pellentesque tellus vitae, facilisis libero. Donec laoreet quis ante eget vulputate. Integer neque massa, egestas nec porttitor nec, porttitor sed nibh. Quisque blandit nisl nec eros cursus aliquet.</p>
+
+				<p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Maecenas faucibus viverra massa ac condimentum. Proin consequat nunc ac leo euismod, eu pretium nulla ultrices. Nam velit nibh, lobortis eu justo at, hendrerit aliquam quam. Mauris malesuada magna diam, nec ultrices sem auctor eget. Morbi maximus metus vel eros porta, nec viverra ante varius. Praesent tellus dui, lobortis sed accumsan in, porttitor ut turpis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Maecenas aliquam vulputate mauris, ac dapibus felis commodo sit amet. Praesent ipsum ipsum, varius ac lacinia nec, interdum in quam. Vivamus pretium erat id odio blandit malesuada a id est. Praesent mattis, sapien id pellentesque tempor, felis urna interdum tellus, et eleifend leo lacus nec eros. Quisque purus felis, pretium vitae tortor sit amet, auctor posuere massa. Vivamus sed tempor magna. Sed a ligula sit amet dolor mattis sodales id venenatis tortor. Curabitur ultricies dignissim vehicula.</p>
+
+				<p>Ut sollicitudin euismod leo et pharetra. Morbi non dictum lectus, nec tincidunt quam. Morbi et ex ipsum. Integer non bibendum tellus. Nam eleifend neque et cursus ultrices. Aliquam placerat massa non magna condimentum finibus. In auctor ipsum et sollicitudin interdum. Sed pellentesque egestas ultrices.</p>
+
+
+
+	    	</div>
+	    </div>
+
+    </body>
+    <footer class ="row">
+
+	</footer>
+
+
+</html>
