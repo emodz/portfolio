@@ -1,14 +1,27 @@
 
 .top-nav {
-	max-width: 960px;
+	position: relative;
+	top: 0;
+	right: 0;
+	left: 0;
 	margin: 0 auto;
+	max-width: 960px;
+	max-height:75px;
+	text-align: center;
+	background-color: #75bcfa; 
+	font-size: 14px;
+}
+.top-bar {
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	margin: 0;
+	width: 100%;
 	max-height:100px;
 	text-align: center;
-	background-color: #4E7695; 
-	font-size: 20px;
-	border-top-left-radius: 2em;
-	border-top-right-radius: 2em;
-
+	background-color: #75bcfa; 
+	font-size: 14px;
 }
 
 .top-nav ul {
@@ -20,6 +33,7 @@
 	padding: 20px;
 }
 
+}
 .splash-nav {
 	width: 100%;
 	background-color: #FFDA7C;
@@ -29,8 +43,8 @@
 }
 
 a {
-	color: black;
-	font-family: Open Sans;
+	color: #f3da64;
+	font-family: Sarala;
 	font-weight: 400;
 	font-size: 10px;
       display: inline-block;
@@ -41,7 +55,8 @@ a {
       -webkit-transition: all 0.2s;
       -ms-transition: all 0.2s;
 
-      margin:auto;
+    margin-right: 10px;
+    margin-left: 10px;
 
       text-decoration: none;
       font-size:2em;
@@ -63,45 +78,44 @@ a {
 	padding: 25px;
 }
 
-
-
 .row {
-	display:flex;
-	display:-webkit-flex;
+	display: flex;
+	display: -webkit-flex;
 	flex-direction:row;
 	flex-wrap: wrap;
 }
 
 .main {
-	font-family: Open Sans;
+	font-family: Sarala;
 	flex:1;
-	background-color: #4E7695 ;
+	background-color: #dedfda ;
 	max-width: 960px;
 	margin:0 auto;
+	margin-top: 45px;
+	position: center;
+
 }
 
-@media (min-width: 480px) {
-
-	.item2 {
-		min-width:calc(40% - 11px);
-	}
-
-	.item3 {
-		min-width:calc(60% - 11px);
-	}
+p {
+    margin-top: 0px;
+    margin-bottom: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
+    text-indent: 50px;
 }
-header {
-position:bottom;
-margin:0 auto;
-max-width:960px;
-height:100px;
-display: block;
-flex:1;
-background:url("http://publicdomainvectors.org/photos/Japanese-Folk-Wave-Pattern-2014081446.png") center top;
-bottom:0;
-background-color: #4E7695;
-border-top-right-radius: 2em;
-border-top-left-radius: 2em;
+
+
+@media (max-width: 961px) {
+
+	.top-nav a{ 
+		font-size: 0;
+		}
+		a:hover{
+     	 transform: scale(1.1, 1.1) ;
+      	-webkit-transform: scale(1.1, 1.1);
+    }
+	}
+
 }
 footer {
 position:bottom;
@@ -112,7 +126,7 @@ display: block;
 flex:1;
 background:url("http://publicdomainvectors.org/photos/Japanese-Folk-Wave-Pattern-2014081446.png") center top;
 bottom:0;
-background-color: #4E7695;
+background-color: #75bcfa;
 border-bottom-right-radius: 2em;
 border-bottom-left-radius: 2em;
 
@@ -120,23 +134,106 @@ border-bottom-left-radius: 2em;
 }
 
 
-@media (min-width: 640px) {
-	.item1 {
-		min-width: calc(50% - 11px);
-		order:1;
+@media (max-width: 960px) {
+	.top-animate {
+	    background: #f3da64 !important;
+	    top: 15px !important;
+	    -webkit-transform: rotate(45deg);
+	    transform: rotate(45deg);
 	}
 
-	.item2 {
-		min-width: calc(25% - 10px);
-		order:0;
+	.mid-animate {
+	    opacity: 0;
+	}
+	.bottom-animate {
+	    background: #f3da64 !important;
+	    top: 15px !important;
+	    -webkit-transform: rotate(-225deg);
+	    transform: rotate(-225deg);
+	}
+	.top-menu {
+	    top: 0px;
+	    width: 50px;
+	    height: 2px;
+	    border-radius: 10px;
+	    background-color: #f3da64;
+	}
+	.mid-menu {
+	    top: 15px;
+	    width: 50px;
+	    height: 2px;
+	    border-radius: 10px;
+	    background-color: #f3da64;
+	}
+	.bottom-menu {
+	    top: 30px;
+	    width: 50px;
+	    height: 2px;
+	    border-radius: 10px;
+	    background-color: #f3da64;
+	}
+	.menui {
+	    background: #f3da64;
+	    transition: 0.6s ease;
+	    transition-timing-function: cubic-bezier(.75, 0, .29, 1.01);
+	    margin-top: 20px;
+
+	    position: absolute;
 	}
 
-	.item3 {
-		min-width:25%;
-		order:2;
+
+	.icon {
+	    z-index: 999;
+	    position: fixed;
+	    display: block;
+	    padding: 9px;
+	    height: 40px;
+	    width:40px;
+	    margin: 0px;
+	    top: 0;
+	    right: 25px;
 	}
+	}
+
+	*{   -webkit-tap-highlight-color: black;
+	    -webkit-tap-highlight-color: transparent; /* For some Androids */
+	}
+
+
+	.mobilenav {
+	    font-family: inherit;
+	    top: 0;
+	    left:0;
+	    z-index: 999;
+	    display: none;
+	    position: fixed;
+	    width: 100%;
+	    height: 100%;
+	    background: rgba(0, 0, 0, 0.9);
+	}
+	.mobilenav li {
+	    list-style-type: none;
+	    text-align: center;
+	    padding: 10px;
+	}
+	.mobilenav li a {
+	    font-size: 150%;
+	    color: #f3da64;
+	    text-decoration: none;
+	    font-weight: 300;
+	    width: 100%;
+	}
+	.mobilenav li:first-child {
+	    margin-top: 60px;
+	}
+
+
+.item {
+    min-width:100%;
+    height:66%;
+    flex:1;
+ 
+    margin:5px;
 }
-
-
-
+ 
 
